@@ -56,7 +56,7 @@ public class Manager : MonoBehaviour
              //Material sprite1 = top.GetComponent<MeshRenderer>().material;
             SpriteRenderer sprite1 = top.GetComponent<SpriteRenderer>();
             // Material sprite2 = obj.GetComponent<MeshRenderer>().material;
-            SpriteRenderer sprite2 = top.GetComponent<SpriteRenderer>();
+            SpriteRenderer sprite2 = obj.GetComponent<SpriteRenderer>();
           
             
             for (int i = 0; i < direction.Length; i++)

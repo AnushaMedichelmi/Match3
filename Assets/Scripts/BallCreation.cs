@@ -12,7 +12,7 @@ public class BallCreation : MonoBehaviour
         {
             for (float j = -4f; j <= 4f; j = j + 1)
             {
-                int k = Random.Range(0, 3);
+                int k = Random.Range(0, 7);
                 GameObject temp = Instantiate(balls[k], new Vector3(i, j, 0f), Quaternion.identity);
                 temp.transform.parent = this.transform;
             }
@@ -20,14 +20,9 @@ public class BallCreation : MonoBehaviour
     }
     public void CreateBall(Vector3 position)
     {
-        int k = Random.Range(0, 3);
+        int k = Random.Range(0, 7);
         GameObject temp = Instantiate(balls[k], position, Quaternion.identity);
         temp.transform.parent = this.transform;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
 }
